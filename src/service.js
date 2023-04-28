@@ -12,5 +12,11 @@ export default class HomoSapien {
     this.venus = venusAge;
     this.mars = marsAge;
     this.jupiter = jupiterAge;
+  } yearsPassed(pastAge) {
+    let yearsPassed = this.earth - pastAge;
+    let mercuryPastMath = Math.round(yearsPassed / .24);
+
+
+    return `${yearsPassed} Earth years have passed, ${mercuryPastMath} Mercury years have passed.`;
   }
 }

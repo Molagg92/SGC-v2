@@ -19,4 +19,10 @@ expect(erik.venus).toEqual(50);
 expect(erik.mars).toEqual(16);
 expect(erik.jupiter).toEqual(3);
   });
+test('should return how many years have gone by between a past age and current age', () => {
+expect(erik.yearsPassed(20)).toEqual("11 Earth years have passed, 46 Mercury years have passed.");
+  });
+test('should retrun how many yeats have gone by between a past age and current age, but with other planets!', () => {
+expect(erik.yearsPassed(20)).toEqual("11 Earth years have passed, 46 Mercury years have passed.");
+  });
 });
