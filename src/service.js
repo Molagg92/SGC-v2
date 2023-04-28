@@ -20,5 +20,13 @@ export default class HomoSapien {
     let jupiterPastMath = Math.round(yearsPassed / 11.86);
 
     return `${yearsPassed} Earth years have passed, ${mercuryPastMath} Mercury years have passed, ${venusPastMath} Venus years have gone by, ${marsPastMath} Mars years have gone by, ${jupiterPastMath} Jupiter years have gone by.`;
+  } yearsToGo(futureAge) {
+    let yearsToPass = futureAge - this.earth;
+    let mercuryFuture = Math.round(yearsToPass / .24);
+    let venusFuture = Math.round(yearsToPass/ .62);
+    let marsFuture  = Math.round(yearsToPass/ 1.88);
+    let jupiterFuture  = Math.round(yearsToPass/ 11.86);
+
+    return `${yearsToPass} Earth years still to go, ${mercuryFuture} Mercury years still to go, ${venusFuture} Venus years still to go, ${marsFuture} Mars years to go, ${jupiterFuture} Jupiter years to go!`;
   }
 }
