@@ -14,3 +14,10 @@ test('should retrun my current age in mercury years! 129', () => {
 expect(erik.mercuryCalc()).toEqual(129);
 });
 });
+
+describe('venusCalc', () => {
+test('should retrun my current age in venus years! 50', () => {
+    const erik = new HomoSapien(31);
+expect(erik.venusCalc()).toEqual(50);
+});
+});

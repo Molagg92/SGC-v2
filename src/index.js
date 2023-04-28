@@ -10,8 +10,8 @@ window.addEventListener("load", function () {
 function galaxyCalculator(e) {
   e.preventDefault();
   const input = document.getElementById('inputBtn').value;
-  const erik = new HomoSapien (31);
-  console.log(erik);
+  
+  console.log(erik.mercuryCalc());
   console.log (input);
 }
-
+const erik = new HomoSapien (31);

@@ -5,6 +5,9 @@ export default class HomoSapien {
   } mercuryCalc() {
     const mercuryAge = Math.round(this.age / 0.24);
     return mercuryAge;
+  } venusCalc(){
+    const venusAge = Math.round(this.age / .62);
+    return venusAge;
   }
 }
 
