@@ -11,6 +11,9 @@ export default class HomoSapien {
   } marsCalc(){
     const marsAge = Math.round(this.age / 1.88);
     return marsAge;
+  } jupiterCalc() {
+    const jupiterAge = Math.round(this.age / 11.86);
+    return jupiterAge;
   }
 }
 
